@@ -25,4 +25,4 @@ RUN wget https://github.com/Illumina/manta/releases/download/v1.0.3/manta-1.0.3.
 
 USER biodocker
 
-CMD ["/home/biodocker/manta-1.0.3.centos5_x86_64/bin/configManta.py"]
+ENTRYPOINT ["/home/biodocker/manta-1.0.3.centos5_x86_64/bin/configManta.py"]
