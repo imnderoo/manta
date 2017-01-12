@@ -26,6 +26,6 @@ WORKDIR /home/biodocker
 RUN wget https://github.com/Illumina/manta/releases/download/v1.0.3/manta-1.0.3.centos5_x86_64.tar.bz2 && \
 	tar -xvjf manta-1.0.3.centos5_x86_64.tar.bz2
 
-ENTRYPOINT ["/home/biodocker/manta-1.0.3.centos5_x86_64/bin/configManta.py"]
+ENTRYPOINTa ["python", "run_manta.py"]
 
 CMD ["-h"]
