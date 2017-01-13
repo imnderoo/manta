@@ -25,8 +25,8 @@ def call_manta(bam_list, out_dir, genome, manta_target, bam_suffix):
 		os.makedirs(out_dir)
 
 	# Manta - Call CNV for each bam in the bam list.
-	manta_config_cmd = "/media/sf_resources/tools/manta-1.0.3.centos5_x86_64/bin/configManta.py"
-	#manta_config_cmd = "/home/biodocker/manta-1.0.3.centos5_x86_64/bin/configManta.py"
+	#manta_config_cmd = "/media/sf_resources/tools/manta-1.0.3.centos5_x86_64/bin/configManta.py"
+	manta_config_cmd = "/home/biodocker/manta-1.0.3.centos5_x86_64/bin/configManta.py"
 	
 	for in_bam in open(bam_list,'rb'):
 		in_bam = in_bam.rstrip('\r\n')
